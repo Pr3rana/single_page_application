@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<div>
+		<div class="card-header text-center">
+			<h2>Task from Noesis.tech</h2>
+		</div>
+		<div class="card-header text-center">
+			<h4 id="task">Check for Prime Number</h4>
+		</div>
+		<div class="card text-center">
+			<div class="card-header">	
+				<ul class="nav nav-tabs card-header-tabs">
+				  <li class="nav-item taskbar" data-body="task1">
+				  	<p class="d-none">Check for Prime Number</p>
+				    <a class="nav-link active" href="javascript:void(0)">Assignment-1</a>
+				  </li>
+				  <li class="nav-item taskbar" data-body="task2">
+				  	<p class="d-none">Check for Palindrome</p>
+				    <a class="nav-link" href="javascript:void(0)">Assignment-2</a>
+				  </li>
+				  <li class="nav-item taskbar" data-body="task3">
+				  	<p class="d-none">Get Fibonacci sequence</p>
+				    <a class="nav-link" href="javascript:void(0)">Assignment-3</a>
+				  </li>
+				</ul>
+			</div>
+			<div class="card-body">
+				<div id="task1">
+					<div class="input-group mb-3 btn-group-toggle">
+  						<input id="num" type="number" class="form-control" placeholder="Enter numeric value here!">
+  						<button id="get_result" class="btn btn-primary">Check result</button>
+					</div>
+					<p id="result1" class="text-center alert alert-info">Output!</p>
+				</div>
+				<div id="task2" class="d-none">
+					<div class="input-group mb-3 btn-group-toggle">
+  						<input id="text" type="text" class="form-control" placeholder="Enter your text here!">
+  						<button id="make_call" class="btn btn-primary">Check result</button>
+					</div>
+					<p id="result2" class="text-center alert alert-info">Output!</p>
+				</div>
+				<div id="task3" class="d-none">
+					<div class="input-group mb-3 btn-group-toggle">
+  						<input id="input" type="number" class="form-control" placeholder="Enter your value here!">
+  						<button id="get_series" class="btn btn-primary">Check result</button>
+					</div>
+					<p id="result3" class="text-center alert alert-info">Output!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="assignment1.js"></script>
+<script type="text/javascript" src="assignment2.js"></script>
+<script type="text/javascript" src="assignment3.js"></script>
+</html>
