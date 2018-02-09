@@ -15,7 +15,7 @@ $( document ).ready(function() {
 			$('#result2').attr('class', '');
             $('#result2').addClass('text-center alert alert-warning');
             //printing the output
-        	$("#result2").html('Please give an input.');
+        	$("#result2").html('Input doesn\'t\ sound right. Check if everything’s fine.');
     	}
     	else{
     		//making ajax call

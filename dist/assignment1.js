@@ -16,7 +16,7 @@ $( document ).ready(function() {
             $('#result1').attr('class', '');
             $('#result1').addClass('text-center alert alert-warning');
             //printing the output
-            $("#result1").html('Please give an input.');
+            $("#result1").html('Input doesn\'t\ sound right. Check if everything’s fine.');
         }
         //checking whether the value is -ve or not
         else if(value<1){
@@ -25,7 +25,7 @@ $( document ).ready(function() {
             $('#result1').attr('class', '');
             $('#result1').addClass('text-center alert alert-warning');
             //printing the output
-            $("#result1").html('Please check the input.');
+            $("#result1").html('Input doesn\'t\ sound right. Check if everything’s fine.');
         }
         else{
              /*removing and adding classes to the output section for desired result

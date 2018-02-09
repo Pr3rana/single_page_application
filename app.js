@@ -9,7 +9,7 @@ var request = require('request');
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 //Provide the absolute path to the dist directory.
-app.use(express.static('D:/xampp/htdocs/Assignment/dist'));
+app.use(express.static('./dist'));
 
 //get request for 'index.html' page.
 app.get('/', function(req, res) {
@@ -20,9 +20,9 @@ app.post('/app', function(req, res) {
     //getting the input
     var input = req.body.data;
     //reversing the input string
-    var str = input.split('').reverse().join().replace(/\,/g,"");
+    var str = input.toLowerCase().split('').reverse().join().replace(/\,/g,"");
     //checking whether the actual input and the reverse string both are same or not.
-    if(input == str){
+    if(input.toLowerCase() == str){
         res.end(input + " is a palindrome.");
     }
     else{

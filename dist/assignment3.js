@@ -15,7 +15,7 @@ $( document ).ready(function() {
         	$('#result3').attr('class', '');
             $('#result3').addClass('text-center alert alert-warning');
             //printing the output
-            $("#result3").html('Please give an input.');
+            $("#result3").html('Input doesn\'t\ sound right. Check if everything’s fine.');
         }
         else{
         	//calling the function find_series which will return the desired fibonacci series
@@ -35,20 +35,23 @@ $( document ).ready(function() {
 		//if value of n is 1, return the initial value of 'seq'
 		if(n===1){
 			
-			return " The fibonacci series: " + seq[0];
+			return " The fibonacci series: " + seq;
 		}
 		//if value of n is less than one, we will ask to modify the input
 		else if(n<1){
-			return "Please check the input."
+			return "Input doesn\'t\ sound right. Check if everything’s fine."
 		}
 		//if value of n is greater that 1, return the series
 		else{
-			for(i=2; i<n; i++)
-			{
-			    // Next fibonacci number = previous + one before previous
-			    seq[i] = seq[i-2] + seq[i-1];
+			var i=2;
+			do{
+				// Next fibonacci number = previous + one before previous
+			  	seq[i] = seq[i-2] + seq[i-1];
+			  	i++;
 			}
+			while(seq[i-1]<=n);
 			//return the series
+			seq.pop();
 			return "The fibonacci series: " + seq;
 		}
 	}
